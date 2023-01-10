@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.App {
+  min-height: 100vh;
+}
+
+.dropdown-menu {
+  background-color: gray;
+}
+.dropdown-item {
+  color: white;
+}
