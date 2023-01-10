@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "59ff3baf-dd6d-472e-957c-bab443353862",
+		"name": "sessionRoutes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18457802"
+	},
+	"item": [
+		{
+			"name": "GetMeRead",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWE5YjU4ZjNhYWU3NjgyMDYzYmY0ZSIsImlhdCI6MTY3MjEyNjMxMCwiZXhwIjoxNjc0NzE4MzEwfQ.Dmacoe5DYbIuBEAwryyBZdtokjo38IZpm9RCPiFTdTw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/session/getMe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"session",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginFunction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/session/login?email=sumanthyashu&password=12345678",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"session",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "sumanthyashu"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerFunction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "approve",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/session/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"session",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMeUpdate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWE5YjU4ZjNhYWU3NjgyMDYzYmY0ZSIsImlhdCI6MTY3MjEyNTMwNCwiZXhwIjoxNjc0NzE3MzA0fQ.kWbyYrSsj5UraKCyEQmZOI4NLUvzqVKos6peTsTcfH8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "sumanthyashu",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "sumanthyashu@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/session/getMe/56461",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"session",
+						"getMe",
+						"56461"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMeDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/session/getMe/56461",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"session",
+						"getMe",
+						"56461"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getallusers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWIzN2IxNDhiMjk4Mzk0NTgzNGY1ZSIsImlhdCI6MTY3MjE2NjE1MCwiZXhwIjoxNjc0NzU4MTUwfQ.I6rBxbwroEU4ZeqGg7PEkslo3V8Srk9VKCSSGJv9GmM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/session/getAllRoutes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"session",
+						"getAllRoutes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "d2033e47-d92a-4d4f-9224-b0b4d6847fc0",
+		"name": "ActorRoutes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18457802"
+	},
+	"item": [
+		{
+			"name": "createActor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWJkNGQ5ZjMzN2Y4MGM1MTQxZTE3MCIsImlhdCI6MTY3MjIwNTU0NCwiZXhwIjoxNjc0Nzk3NTQ0fQ._GwedmeXFxKXqjz17HBTmZwKk0WI8o-sBa2hoT96QeI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ahddas",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "img.jpg",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "06-13-1995",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/actor/createActor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"actor",
+						"createActor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllActors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/actor/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"actor",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

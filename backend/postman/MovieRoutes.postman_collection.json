@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "16cc6f47-b6e3-495e-8359-db7729e19b6e",
+		"name": "MovieRoutes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18457802"
+	},
+	"item": [
+		{
+			"name": "CreateMovie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWFlMGU0ZTc2YTZjYzdhY2RlNzA5NyIsImlhdCI6MTY3MjE2MDkxMiwiZXhwIjoxNjc0NzUyOTEyfQ.yH-ReSwdISWfGCeFRcXtHMZ3pkVEPVj6r7Q2_dFpmrc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "harry potter 4",
+							"type": "text"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2004-12-09",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "image.com",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "testing",
+							"type": "text"
+						},
+						{
+							"key": "actors",
+							"value": "[srk,kajol]",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "sumanth Hegde",
+							"type": "text"
+						},
+						{
+							"key": "producer",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reviews",
+							"value": "[123312,31213132,2121221,]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadProducerMovies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWFlNDhkM2Y5NmNhNzMyZWY2Y2JjYSIsImlhdCI6MTY3MjE0NDAyNiwiZXhwIjoxNjc0NzM2MDI2fQ.GW6UT1XAV0i7yzCryGXvjWxH8FGRbU-_c_rhkf0OMZc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getallmovies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAMovie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/63ab26ad6f39c62352fc86b5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"63ab26ad6f39c62352fc86b5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWFlMGU0ZTc2YTZjYzdhY2RlNzA5NyIsImlhdCI6MTY3MjE2MDkxMiwiZXhwIjoxNjc0NzUyOTEyfQ.yH-ReSwdISWfGCeFRcXtHMZ3pkVEPVj6r7Q2_dFpmrc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "releaseDate",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "actors",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "producer",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reviews",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/movie/63ab26b26f39c62352fc86b9?title&releaseDate&image&description&actors&director&producer&reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movie",
+						"63ab26b26f39c62352fc86b9"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": null
+						},
+						{
+							"key": "releaseDate",
+							"value": null
+						},
+						{
+							"key": "image",
+							"value": null
+						},
+						{
+							"key": "description",
+							"value": null
+						},
+						{
+							"key": "actors",
+							"value": null
+						},
+						{
+							"key": "director",
+							"value": null
+						},
+						{
+							"key": "producer",
+							"value": null
+						},
+						{
+							"key": "reviews",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletemovie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWFlMGU0ZTc2YTZjYzdhY2RlNzA5NyIsImlhdCI6MTY3MjE2MDkxMiwiZXhwIjoxNjc0NzUyOTEyfQ.yH-ReSwdISWfGCeFRcXtHMZ3pkVEPVj6r7Q2_dFpmrc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "releaseDate",
+							"value": "2021-06-07",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "actors",
+							"value": "[]",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "director",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "producer",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "reviews",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/movie/63ab26ad6f39c62352fc86b5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movie",
+						"63ab26ad6f39c62352fc86b5"
+					],
+					"query": [
+						{
+							"key": "producer",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

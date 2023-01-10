@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "687e710c-4dfe-455e-9a2f-06275f3e43ab",
+		"name": "reviewRoutes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18457802"
+	},
+	"item": [
+		{
+			"name": "ReadReviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/Review/rev",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Review",
+						"rev"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createReviews",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWJlMjhiNzYwNDM5YmY2OTY4NzUwNiIsImlhdCI6MTY3MjIwOTA0NiwiZXhwIjoxNjc0ODAxMDQ2fQ.n45LCXLqz9QcGY9beuCWiTYBNLAwiGeaWBJXdkYbvnY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/Review/rev",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Review",
+						"rev"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateReviews",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWJlMjhiNzYwNDM5YmY2OTY4NzUwNiIsImlhdCI6MTY3MjIwOTA0NiwiZXhwIjoxNjc0ODAxMDQ2fQ.n45LCXLqz9QcGY9beuCWiTYBNLAwiGeaWBJXdkYbvnY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/Review/rev/168184",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Review",
+						"rev",
+						"168184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteReview",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYWJlMjhiNzYwNDM5YmY2OTY4NzUwNiIsImlhdCI6MTY3MjIwOTA0NiwiZXhwIjoxNjc0ODAxMDQ2fQ.n45LCXLqz9QcGY9beuCWiTYBNLAwiGeaWBJXdkYbvnY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/Review/rev/546846",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Review",
+						"rev",
+						"546846"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
