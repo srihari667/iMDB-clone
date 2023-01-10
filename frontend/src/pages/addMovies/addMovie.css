@@ -1,0 +1,9 @@
+.actor__selector {
+  position: relative;
+}
+
+.actor__list {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
